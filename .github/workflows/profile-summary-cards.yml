@@ -21,3 +21,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
+         # EXCLUDE is an optional comma seperated list of languages to exclude, defaults to ""
+          EXCLUDE: "C++"
+          # ANIMATION is optional; bake a CSS animation into the cards: none | fade | rise | draw | stagger | load | sequence | tint | rgb | rgb-soft. Empty = no animation.
+          ANIMATION: "rise"
